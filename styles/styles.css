@@ -1,0 +1,444 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão para todo o corpo */
+    background-color: #f8e0e0;
+    margin: 0;
+    padding: 0;
+}
+/* Estilização do Menu */
+.menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff85a2; /* Cor do menu */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    z-index: 1000;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2px; /* Bordas arredondadas */
+}
+
+.menu-btn {
+    background-color: #fff;
+    color: #ff85a2;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s; /* Animação ao passar o mouse */
+}
+
+.menu-btn:hover {
+    background-color: #f77;
+    color: #fff;
+    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    top: 70px; /* Ajustado para se afastar do botão */
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    padding: 15px;
+    border-radius: 10px; /* Bordas arredondadas */
+    animation: fadeIn 0.3s; /* Efeito de entrada suave */
+}
+
+.menu-content a {
+    display: block;
+    color: #ff85a2;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px 15px; /* Adiciona espaçamento nas opções */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para a cor */
+}
+
+.menu-content a:hover {
+    background-color: #ff85a2; /* Fundo rosa claro ao passar o mouse */
+    color: #fff; /* Texto branco ao passar o mouse */
+}
+
+.close-menu {
+    background-color: #f77;
+    color: white;
+    border: none;
+    padding: 10px 15px; /* Ajuste de padding */
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.close-menu:hover {
+    background-color: #ff85a2; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Desloca um pouco para cima */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Ajuste do container e carousel */
+.container {
+    max-width: 800px;
+    margin: 1px auto 0;
+    padding: 10px;
+}
+
+/* Carrossel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 70%; /* Diminui o tamanho do carrossel */
+    margin: 0 auto;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.carousel-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-indicators span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators span.active {
+    background-color: #f77;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.text-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1 {
+    color: #d55;
+}
+
+p {
+    color: #333;
+    margin: 0;
+}
+.memories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cria um grid responsivo */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin-top: 20px;
+}
+
+.memory-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.memory-item img {
+    width: 100%; /* Faz a imagem preencher o espaço do item */
+    border-radius: 10px; /* Bordas arredondadas */
+    height: auto; /* Mantém a proporção da imagem */
+}
+.text-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    margin: 20px auto; /* Centraliza a seção */
+    max-width: 600px; /* Largura máxima */
+    text-align: center; /* Centraliza o texto */
+}
+
+h1 {
+    color: #ff4e50; /* Cor do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+p {
+    color: #333; /* Cor do parágrafo */
+    margin: 0; /* Remove margens */
+}
+
+.heart {
+    display: inline-block; /* Permite aplicar animação */
+    animation: pulse 1s infinite; /* Define a animação */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Tamanho original */
+    }
+    50% {
+        transform: scale(1.2); /* Aumenta o tamanho */
+    }
+    100% {
+        transform: scale(1); /* Volta ao tamanho original */
+    }
+}
+
+/*pagina de musica*/
+
+.music-container {
+    padding: 100px;
+    text-align: center; /* Centraliza o texto */
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    max-width: 800px; /* Largura máxima */
+    margin: 20px auto; /* Centraliza a seção na tela */
+}
+
+.music-container h1 {
+    color: #ff4e50; /* Cor do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.music-container p {
+    color: #333; /* Cor do parágrafo */
+    margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+}
+
+.spotify-container {
+    display: flex;
+    flex-direction: column; /* Alinha as músicas verticalmente */
+    align-items: center; /* Centraliza as músicas */
+}
+
+.spotify-container iframe {
+    margin: 10px 0; /* Espaçamento entre as músicas */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+.content-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.video-gallery {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px; /* Espaço entre os vídeos */
+}
+
+.video-gallery iframe {
+    width: 100%;
+    height: 200px; /* Ajuste conforme necessário */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+h2 {
+    margin-top: 20px; /* Espaço acima dos subtítulos */
+}
+
+ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding-left: 0; /* Remove recuo */
+}
+
+ul li {
+    margin: 10px 0; /* Espaçamento entre os itens da lista */
+}
+
+/*pagina de ansiedade*/
+
+
+.calm-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff; /* Fundo branco para contraste */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #d55; /* Azul do título */
+}
+
+.breathing-exercises, .music, .positive-affirmations, .resources, .calming-activities, .contact, .meditation-section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #4a90e2;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.breathing-exercises:hover, .music:hover, .positive-affirmations:hover, .resources:hover, .calming-activities:hover, .contact:hover {
+    transform: scale(1.02); /* Aumenta um pouco o tamanho ao passar o mouse */
+}
+
+.breathing-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Altura fixa para a animação */
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    background-color: #6fa3ef; /* Azul da respiração */
+    border-radius: 50%;
+    transition: transform 3s ease-in-out;
+}
+
+button {
+    background-color: #6fa3ef;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4a90e2;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+
+.anxiety-page {
+    margin-top: 60px; /* Espaço para o menu */
+}
+
+
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+
+/*aba de filmes*/
+/* Estilização do Container */
+select, button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #ff85a2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f77;
+}
+
+#recommendation {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#recommendation img {
+    width: 200px; /* Ajuste a largura da imagem conforme necessário */
+    border-radius: 10px;
+    margin: 10px 0;
+}
+/* Adicione isso ao seu styles.css existente */
+.favorites {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.favorite-movie {
+    display: inline-block;
+    margin: 10px;
+}
+
+.favorite-movie img {
+    width: 100px; /* Ajuste o tamanho da imagem como necessário */
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.remove-favorite {
+    cursor: pointer;
+    color: red;
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Mantém a consistência da fonte usada no projeto */
+    font-size: 18px; /* Tamanho maior para facilitar a leitura */
+    color: #333; /* Cor suave para o texto */
+    line-height: 1.6; /* Espaçamento entre linhas para tornar a leitura mais agradável */
+    margin: 15px 0; /* Espaçamento entre os parágrafos */
+    padding: 10px; /* Adiciona um pouco de espaço interno */
+    background-color: #fff; /* Cor de fundo suave para destacar os parágrafos */
+    border-left: 4px solid #ff85a2; /* Adiciona uma barra à esquerda como destaque */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease; /* Transição suave de cores */
+}
+

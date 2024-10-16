@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Quando Estiver Com Ansiedade</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Estilos adicionais para a página */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            /* Cor de fundo suave */
+            color: #333;
+            /* Cor do texto */
+        }
+
+        .calm-container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            /* Fundo branco para o container */
+        }
+
+        h1 {
+            color: #FF6F61;
+            /* Cor do título */
+            text-align: center;
+        }
+
+        h2 {
+            color: #FF6F61;
+            /* Cor dos subtítulos */
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #FF6F61;
+            /* Cor dos botões */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            /* Espaçamento em torno dos botões */
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #FF4C30;
+            /* Cor dos botões ao passar o mouse */
+        }
+
+        .breathing-animation {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: #FF6F61;
+            border-radius: 50%;
+            transition: transform 3s ease-in-out;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FF6F61;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            /* Permite margem */
+            margin-top: 20px;
+            /* Margem superior para espaçamento */
+            padding: 10px 15px;
+            background-color: #25D366;
+            /* Cor do botão do WhatsApp */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+            /* Cor ao passar o mouse */
+        }
+
+        .meditation-section {
+            text-align: center;
+            margin: 40px auto;
+        }
+
+        .meditation-controls {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        select,
+        button {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: #ff85a2;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #f77;
+        }
+
+        .meditation-display {
+            margin-top: 30px;
+        }
+
+        #meditation-message {
+            font-size: 20px;
+            font-style: italic;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <button class="menu-btn" onclick="toggleMenu()">&#9776; Menu</button>
+        <div class="menu-content">
+            <a href="lembrancas.html">Caixinha de lembranças</a>
+            <a href="tudo-que-me-lembra-voce.html">Músicas</a>
+            <a href="tedio.html">Para quando estiver se sentindo entediada</a>
+            <a href="Filmes.html">LetterBoxd- Jorge Version's</a>
+            <a href="index.html">Voltar para a Página Inicial</a>
+            <button class="close-menu" onclick="toggleMenu()">Fechar</button>
+        </div>
+    </div>
+
+    <div class="calm-container">
+        <h1>Aqui é o seu espaço de calma 💖</h1>
+        <p>Bom, eu sei que as coisas não são tão simples, se está aqui é porque precisa. Esse espaço tem algumas
+            coisinhas que podem de certo modo te ajudar quando estiver mal, ou algo do gênero. Espero que seja útil, e
+            caso não seja, você ainda tem a opção de recorrer ao seu namorado, afinal eu estou <strong>SEMPRE</strong>
+            aqui para você. Não esqueça o quanto é amada💖</p>
+
+        <section class="breathing-exercises">
+            <h2>Exercícios de Respiração</h2>
+            <p>Tente esta técnica de respiração:</p>
+            <div class="breathing-animation">
+                <div class="circle" id="breathing-circle"></div>
+            </div>
+            <p>Essa bolinha está programada para um time específico de respiração, foque 100% nela e respire conforme
+                seu ritmo.</p>
+        </section>
+
+        <section class="music">
+            <h2>Músicas Relaxantes</h2>
+            <p>Sei que não é simplesmente "Escuta essa música e fica calma" mas pode ser que te ajude de alguma forma,
+                todas as playlists foram escutadas e testadas antes de serem colocadas aqui, ok? </p>
+            <ul>
+                <li><a href="https://open.spotify.com/intl-pt/album/5TPZgrjq7cIwouP3yIKFzU?si=9MSyDMJ9TVG5roPLZJfGYQ"
+                        target="_blank">Playlist para se acalmar 1</a></li>
+                <li><a href="https://open.spotify.com/playlist/6nVlroxRmcs6h03Jl18nfR?si=6be524d484264ca0"
+                        target="_blank">Playlist para se acalmar 2</a></li>
+                <li><a href="https://open.spotify.com/playlist/2reT6fDGNUKdfRPAmJo1gG?si=10cc713b7f5e4fc5"
+                        target="_blank">Playlist para se acalmar 3</a></li>
+            </ul>
+        </section>
+
+        <section class="positive-affirmations";>
+            <h2>Afirmações Positivas</h2>
+            <p>A cada vez que você clicar nesse botão, uma frase de afirmação será gerada, com algo que talvez você
+                precise ouvir, e acreditar.</p>
+            <button id="affirmation-button">Gerar Afirmação</button>
+            <p id="affirmation-text">Eu te amo, infinito.</p>
+        </section>
+
+        <section class="meditation-section">
+            <h2><span>🧘</span> Meditação Guiada</h2>
+            <p>Talvez isso te ajude de alguma forma. <br>Escolha a duração, o som e o volume para sua meditação:</p>
+
+            <div class="meditation-controls">
+                <label for="meditation-duration">Duração:</label>
+                <select id="meditation-duration">
+                    <option value="5">5 minutos</option>
+                    <option value="10">10 minutos</option>
+                    <option value="15">15 minutos</option>
+                </select>
+
+                <label for="meditation-sound">Som:</label>
+                <select id="meditation-sound">
+                    <option value="ocean">Ondas do Mar</option>
+                    <option value="forest">Floresta</option>
+                    <option value="rain">Chuva</option>
+                </select>
+
+                <label for="meditation-volume">Volume:</label>
+                <input type="range" id="meditation-volume" min="0" max="1" step="0.1" value="0.5">
+
+                <button id="start-meditation">Iniciar Meditação</button>
+                <button id="stop-meditation" style="display: none;">Parar Meditação</button>
+            </div>
+
+            <div id="meditation-display" class="meditation-display">
+                <p id="meditation-message"></p>
+                <audio id="meditation-audio" loop></audio>
+            </div>
+        </section>
+
+
+
+        <section class="calming-activities">
+            <h2>Atividades Calmantes</h2>
+            <p>Tente estas atividades para acalmar a mente:</p>
+            <ul>
+                <li>🌈 Colorir: <a href="https://www.colorir.com/" target="_blank">Tente colorir algo online para se
+                        distrair</a></li>
+                <li>🫗 Sai desse quarto, respira, vá beber uma água</li>
+                <li>🧠 Vamos pensar com calma, certo? Está tudo realmente tão ruim? Foco no problema real.</li>
+                <li>🌿 Vai dar uma volta no seu quintal, fazer um carinho na Pantera, existem várias coisas boas e vivas ao redor, não deixe as ruins te afundarem.</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contato</h2>
+            <p>Caso nada tenha funcionado, você ainda tem a mim, e eu estou aqui sempre para te acolher, te ouvir, te
+                abraçar, te beijar, e te deixar segura, clica ai sem pensar duas vezes:</p>
+            <a href="https://wa.me/5562995502098" target="_blank" class="whatsapp-button">Jorge, seu amor.</a>
+        </section>
+    </div>
+
+    <script>
+        // Função para gerar afirmações positivas aleatórias
+        const affirmations = [
+            "Eu sou forte e me adapto às mudanças.",
+            "Cada dia é uma nova chance de ser melhor que ontem.",
+            "Eu sou capaz de encontrar alegria nas pequenas coisas.",
+            "Eu libero a necessidade de ser perfeita.",
+            "Eu me perdoe por meus erros e sigo em frente.",
+            "Eu sou suficiente exatamente como sou.",
+            "Eu atraio positividade e luz para a minha vida.",
+            "Eu sou uma fonte de amor e compaixão.",
+            "Eu cuido de mim mesma com amor e gentileza.",
+            "Eu posso enfrentar o que quer que a vida traga.",
+            "Eu sou capaz de criar a vida que desejo.",
+            "Eu sou grata pelas pessoas que me rodeiam.",
+            "Eu me permito descansar e rejuvenescer.",
+            "Eu sou forte o suficiente para pedir ajuda quando preciso.",
+            "Eu escolho a felicidade e o amor todos os dias.",
+            "Eu sou única e isso é uma bênção.",
+            "Eu abraço a incerteza como parte do meu crescimento.",
+            "Eu sou capaz de fazer mudanças positivas na minha vida.",
+            "Eu sou cheia de potencial e criatividade.",
+            "Eu vivo no presente e aproveito cada momento.",
+            "Eu sou amada e valorizada pelas pessoas à minha volta.",
+            "Nada e por acaso, eu aprendo a confiar no meu processo de vida.",
+            "Eu sou capaz de encontrar calma em momentos de tempestade.",
+            "Eu sou uma fonte de força e inspiração para os outros.",
+            "Eu acolho minha vulnerabilidade como uma parte importante de mim.",
+            "Eu faço escolhas saudáveis para meu corpo e mente.",
+            "Eu sou corajosa e enfrento meus medos.",
+            "Eu crio minha própria felicidade e bem-estar.",
+        ];
+
+        document.getElementById('affirmation-button').onclick = function () {
+            const randomIndex = Math.floor(Math.random() * affirmations.length);
+            document.getElementById('affirmation-text').textContent = affirmations[randomIndex];
+        };
+
+        // Animação do círculo de respiração
+        const breathingCircle = document.getElementById('breathing-circle');
+        let scale = 1;
+
+        function breathe() {
+            scale = scale === 1 ? 1.5 : 1; // Alterna entre 1 e 1.5
+            breathingCircle.style.transform = `scale(${scale})`;
+        }
+
+        setInterval(breathe, 3000); // Executa a animação a cada 3 segundos
+
+        document.getElementById('start-meditation').addEventListener('click', startMeditation);
+        document.getElementById('stop-meditation').addEventListener('click', stopMeditation);
+        document.getElementById('meditation-volume').addEventListener('input', updateVolume);
+
+        let meditationTimeout;
+        let meditationInterval;
+
+        function startMeditation() {
+            const duration = document.getElementById('meditation-duration').value;
+            const sound = document.getElementById('meditation-sound').value;
+            const volume = document.getElementById('meditation-volume').value;
+
+            const meditationAudio = document.getElementById('meditation-audio');
+            const meditationMessage = document.getElementById('meditation-message');
+
+            let soundFile;
+            switch (sound) {
+                case 'ocean':
+                    soundFile = 'audios/ocean-waves.mp3'; // Adicione o caminho correto para o arquivo
+                    break;
+                case 'forest':
+                    soundFile = 'audios/forest-song.mp3';
+                    break;
+                case 'rain':
+                    soundFile = 'audios/rain-sound.mp3';
+                    break;
+            }
+
+            meditationAudio.src = soundFile;
+            meditationAudio.volume = volume; // Define o volume inicial
+            meditationAudio.play();
+
+            // Exibe o botão de parar meditação
+            document.getElementById('stop-meditation').style.display = 'inline-block';
+            document.getElementById('start-meditation').style.display = 'none';
+
+            // Frases guiadas para a meditação
+            const messages = [
+                "Concentre-se na sua respiração...",
+                "Sinta o ar entrando e saindo...",
+                "Acalme sua mente, deixe seus pensamentos fluírem...",
+                "Foque no presente, no agora...",
+                "Observe o fluxo natural da sua respiração, sem tentar controlá-la.",
+                "Deixe seus músculos relaxarem, soltando qualquer tensão acumulada.",
+                "Permita que seus pensamentos passem como nuvens no céu, sem se apegar a eles.",
+                "Sinta o contato do seu corpo com o ambiente, tornando-se consciente de cada parte.",
+                "Inspire calma e expire qualquer preocupação.",
+                "Permaneça presente, sentindo o momento com atenção plena.",
+                "Seja gentil consigo mesmo, sem julgar seus pensamentos ou sentimentos.",
+                "Visualize um lugar tranquilo e sereno, onde você se sente em paz.",
+                "Permita que cada exalação te traga mais leveza e tranquilidade.",
+                "Concentre-se no ritmo do seu coração, sentindo cada batida suavemente.",
+            ];
+
+            let messageIndex = 0;
+            meditationMessage.textContent = messages[messageIndex];
+
+            meditationInterval = setInterval(() => {
+                messageIndex = (messageIndex + 1) % messages.length;
+                meditationMessage.textContent = messages[messageIndex];
+            }, 15000); // Alterne frases a cada 15 segundos
+
+            // Termina a meditação após a duração selecionada
+            meditationTimeout = setTimeout(() => {
+                stopMeditation();
+                meditationMessage.textContent = "Meditação concluída. Volte quando quiser!";
+            }, duration * 60000);
+        }
+
+        function stopMeditation() {
+            const meditationAudio = document.getElementById('meditation-audio');
+            const meditationMessage = document.getElementById('meditation-message');
+
+            clearInterval(meditationInterval);
+            clearTimeout(meditationTimeout);
+            meditationAudio.pause();
+            meditationMessage.textContent = "Meditação interrompida.";
+
+            // Esconde o botão de parar meditação e volta a exibir o de iniciar
+            document.getElementById('stop-meditation').style.display = 'none';
+            document.getElementById('start-meditation').style.display = 'inline-block';
+        }
+
+        // Função para atualizar o volume do áudio
+        function updateVolume() {
+            const volume = document.getElementById('meditation-volume').value;
+            const meditationAudio = document.getElementById('meditation-audio');
+            meditationAudio.volume = volume;
+        }
+
+    </script>
+</body>
+
+</html>

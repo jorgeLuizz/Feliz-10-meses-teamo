@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio de Filmes e Séries</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="menu">
+        <button class="menu-btn" onclick="toggleMenu()">&#9776; Menu</button>
+        <div class="menu-content">
+            <a href="lembrancas.html">Caixinha de lembranças</a>
+            <a href="ansiedade.html">Para quando estiver se sentindo ansiosa</a>
+            <a href="tedio.html">Para quando estiver entediada</a>
+            <a href="tudo-que-me-lembra-voce.html">Músicas</a>
+            <a href="Filmes.html">LetterBoxd- Jorge Version's</a>
+            <a href="index.html">Voltar para a Página Inicial</a>
+            <button class="close-menu" onclick="toggleMenu()">Fechar</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>🎬 Sorteio de Filmes e Séries 🍿</h1>
+        <p>Chegamos em uma parte bem interessante, aqui você escolhe um gênero, e um filme / série aleatórios serão gerados, coloquei o máximo de opções que eu consegui!</p>
+        <select id="genre-select">
+            <option value="">Selecione um gênero</option>
+            <option value="comedy">Comédia</option>
+            <option value="drama">Drama</option>
+            <option value="action">Ação</option>
+            <option value="horror">Terror</option>
+            <option value="thriller">Suspense</option>
+            <option value="romance">Romance</option>
+            <option value="fantasy">Fantasia</option>
+            <option value="sci-fi">Ficção Científica</option>
+        </select>
+        <button id="recommend-button">🔍 Recomendar Filme</button>
+
+        <div id="recommendation" class="recommendation"></div>
+        <h2>⭐ Filmes Favoritos</h2>
+        <p>A seleção de favoritos fica salva no navegador em que o site for aberto, portanto sempre que for salvar filmes opte por salvar no mesmo dispositivo (computador).</p>
+        <div id="favorites" class="favorites"></div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Quando Estiver Entediada</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content-container {
+            padding-top: 60px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #d55;
+        }
+
+        /* Estilizando a section de jogos */
+        .games-section {
+            background-color: #fcfafa;
+            /* Fundo escuro estilo gaming */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            /* Sombra suave para destacar */
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .games-section h2 {
+            font-size: 24px;
+            color: #ff4b5c;
+            /* Cor vibrante de destaque */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+            /* Sombra no título */
+            display: inline-block;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #ff4b5c;
+            /* Barra abaixo do título */
+        }
+
+        .games-section ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* Centraliza os links de jogos */
+        }
+
+        .games-section li {
+            margin: 10px;
+        }
+
+        .games-section a {
+            font-family: 'Roboto', sans-serif;
+            /* Mantendo consistência de fonte */
+            font-size: 18px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #f0f0f0;
+            background-color: #ff4b5c;
+            /* Fundo dos links */
+            padding: 12px 24px;
+            border-radius: 10px;
+            transition: transform 0.3s, background-color 0.3s;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .games-section a:hover {
+            background-color: #ff304f;
+            /* Efeito de hover com cor diferente */
+            transform: translateY(-5px);
+            /* Efeito de "subida" ao passar o mouse */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+            /* Sombra ao passar o mouse */
+        }
+
+        .games-section a:active {
+            transform: translateY(0);
+            /* Retorno do botão ao ser clicado */
+        }
+
+        .games-section a::before {
+            content: '🎮';
+            /* Ícone de joystick antes do link */
+            margin-right: 8px;
+        }
+
+        /* Para responsividade */
+        @media (max-width: 768px) {
+            .games-section ul {
+                flex-direction: column;
+                /* Lista vertical em telas menores */
+            }
+        }
+
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2 span {
+            margin-right: 10px;
+            /* Espaço entre emoji e título */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            /* Centraliza os vídeos */
+        }
+
+        .video-gallery iframe {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            border: none;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .video-gallery iframe:hover {
+            transform: scale(1.05);
+        }
+
+        .music-list {
+            text-align: center;
+        }
+
+        .music-list iframe {
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .creative-challenges {
+            background-color: #e9ecef;
+            /* Fundo mais claro para a seção de desafios */
+            border-left: 5px solid #007bff;
+            /* Borda à esquerda para destacar */
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <button class="menu-btn" onclick="toggleMenu()">&#9776; Menu</button>
+        <div class="menu-content">
+            <a href="lembrancas.html">Caixinha de lembranças</a>
+            <a href="ansiedade.html">Para quando estiver se sentindo ansiosa</a>
+            <a href="tudo-que-me-lembra-voce.html">Músicas</a>
+            <a href="Filmes.html">LetterBoxd- Jorge Version's</a>
+            <a href="index.html">Voltar para a Página Inicial</a>
+            <button class="close-menu" onclick="toggleMenu()">Fechar</button>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <h1>Para Quando Estiver Entediada 😄</h1>
+        <p>Fiz essa página para você navegar e ficar com o cérebro completamente carcomido, sem pensar em nada! <br>Se
+            for jogar, chama seu namorado :3 </br> </p>
+
+        <section class="games-section">
+            <h2><span>🎮</span> Jogos Online</h2>
+            <ul class="game-list">
+                <li><a href="https://playvalorant.com/pt-br/download/" target="_blank">Valorant</a></li>
+                <li><a href="https://www.fortnite.com/?lang=pt-BR" target="_blank">Fortnite</a></li>
+                <li><a href="https://steamcommunity.com/profiles/76561199191453370/" target="_blank">Steam do
+                        namorado</a></li>
+                <li><a href="https://www.counter-strike.net/" target="_blank">Counter Strike</a></li>
+                <li><a href="https://www.roblox.com/pt/games/15101393044/Dress-To-Impress" target="_blank">Esse prefiro
+                        nem comentar</a></li>
+            </ul>
+        </section>
+        <section>
+            <h2><span>🫣</span>Vídeos para assistir (e corroer o cérebro) </h2>
+            <div class="video-gallery">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PDAwA06snXk?si=aK-ThqDkRtmif98Q"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5BLQGnybBZc?si=suupt5tfpYlsk-XG"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dIXTr4UOdiQ?si=0DuT6HNIxar3xyUG"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CkIoTPP2Qbo?si=pinsAcbuMv0eDvQy"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KIFZhwcL46M?si=DxlIX1CYd5MHy9LC"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yVKfCWP-HmY?si=b5xTOCRJwn1l556a"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/y0UE37U6WUE?si=qepGXYHWgiwqjWdf"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XWBjsuA00Xg?si=4ONL6sGgX0Mgbbsq"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vly_T-pmx_E?si=mxZi8Bj3_D2OFTSq"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xLJRQorxUP4?si=KMHb0FILmz7ApIW7"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RiAt3GRGr1A?si=H1-FaKAdJtMaYnVV"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kFoYBPZ18NU?si=0y6IPC5MRDHON6kw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section>
+            <h2><span>🧠</span>Quizzes bobos</h2>
+            <ul>
+                <li><a href="https://pt.quizur.com/trivia/o-quanto-voce-sabe-sobre-kanye-west-QToZ" target="_blank">O
+                        quanto você sabe sobre Kanye West?</a></li>
+                <li><a href="https://pt.quizur.com/quiz/qual-cabelo-da-taylor-vc-e-Tpdc" target="_blank">Qual cabelo da
+                        taylor vc é🤘🤘</a></li>
+                <li><a href="https://pt.quizur.com/quiz/qual-princesa-da-disney-voce-seria-2iqY" target="_blank">Qual
+                        princesa da Disney você seria?</a></li>
+                <li><a href="https://pt.quizur.com/quiz/monte-seu-girl-group-WqDF" target="_blank">Monte seu Girl
+                        Group</a></li>
+
+            </ul>
+        </section>
+
+
+        <section>
+            <h2><span>🎨</span>Desafios Criativos</h2>
+            <p>Experimente fazer um dos seguintes desafios (e me mande os resultados):</p>
+            <div class="creative-challenges">
+
+                <ul>
+                    <li>🖌️ Desenhe imediatamente algo que te faça feliz ou que te represente.</li>
+                    <li>📖 Invente uma história curta, em 15 minutos, teste sua criatividade.</li>
+                    <li>🍳 Aprenda uma nova receita que sempre quis experimentar (e faça para mim fazendo favor).</li>
+                    <li>🎸 Pegue seu Ukulelê, e toque a primeira música que vier a cabeça</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2><span>🎶</span>Músicas Animadas</h2>
+            <p>Levanta a bunda da cadeira e vai dançar!!!!!!!!!</p>
+            <div class="music-list">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/1iyUKbbYtUMf6nxalWSWzv?utm_source=generator&theme=0"
+                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/playlist/237XnwuS1Y3Mhr3BQmuPhp?utm_source=generator"
+                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
